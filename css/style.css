@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+i {
+  color: white;
+  cursor: pointer;
+}
+
+.music {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.music-container {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  background: radial-gradient(#124cba, rgba(25, 115, 178, 0.8196078431));
+  box-shadow: inset 3px 0px 5px 0px rgba(17, 25, 104, 0.72), inset -3px 0px 5px 0px #394b84;
+  padding: 16px 27px;
+}
+.music-container .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.music-container .main {
+  width: 100%;
+  display: flex;
+  gap: 30%;
+}
+.music-container-img {
+  width: 100%;
+  height: 48%;
+  position: relative;
+}
+.music-container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.music-container-img .img2 {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.music-container .music-name-txt {
+  max-width: 90%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.music-container-text {
+  width: 100%;
+}
+.music-container-text .music-parametr {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+  position: relative;
+}
+.music-container-text .music-parametr .gedenvaxt {
+  position: absolute;
+  top: -22px;
+  color: white;
+  left: 2px;
+}
+.music-container-text .music-parametr .mahnideqiqesi {
+  position: absolute;
+  top: -22px;
+  color: white;
+  right: 2px;
+}
+.music-container-text .music-parametr .mahnigedisi {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.music-container-button {
+  width: 260px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+.music-container-button .buton {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.music-container-button .pauseBtn {
+  font-size: 35px;
+}
+.music-container .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[name=zaman] {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  margin: 0px;
+  padding: 0px;
+  background: #f2eae4;
+  height: 5px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[name=zaman]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #2bf260;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  box-shadow: -100vw 0 0 100vw #ed137c;
+}
+
+input[name=volume] {
+  margin-top: 10px;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  margin: 15px 0px 0px 0px;
+  padding: 0px;
+  background: #2b298b;
+  height: 10px;
+  width: 40%;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+
+input[name=volume]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #2bf260;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  box-shadow: -100vw 0 0 100vw #ed137c;
+}
+
+@media only screen and (max-width: 768px) {
+  .music-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}/*# sourceMappingURL=style.css.map */

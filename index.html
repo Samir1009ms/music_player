@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <section class="music">
+        <div class="music-container">
+            <div class="header">
+                <span class="header-time"></span>
+                <span class="header-icon">
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-solid fa-battery-full"></i>
+                </span>
+            </div>
+            <div class="main">
+                <span><i class="fa-solid fa-circle-chevron-down"></i></span>
+                <p class="main-text">Music Player</p>
+            </div>
+            <div class="music-container-img">
+                <img id="musicimg" class="musicimg" src="" alt="" />
+            </div>
+            <div class="music-name-txt">
+                <p id="musicname" class="music-name"></p>
+            </div>
+
+            <div id="music-container-text" class="music-container-text">
+                <div class="music-parametr">
+                    <span class="gedenvaxt"></span>
+                    <span class="mahnideqiqesi"></span>
+                    <div class="mahnigedisi"  step="1" value="0" min="0" max="100"></div>
+                    <input type="range" class="volume" name="volume" id=""  step="0.01" min="0" max="1" value="1">
+                    <!-- <input type="range" name="zaman" class="zaman"  step="1" class="seekbar" value="0" min="0" max="100"/> -->
+                </div>
+            </div>
+
+            <audio id="audio" class="audio" src=""></audio>
+            <div class="music-container-button">
+                <button id="left" class="buton leftBtn">
+                    <i class="fa-solid fa-backward"></i>   
+                </button>
+                <button id="pause" class="buton pauseBtn">
+                    <i class="btn fa-solid fa-play"></i>
+                </button>
+                <button id="right" class="buton rightBtn">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+            <div class="footer">
+                <span><i  class="fa-solid fa-rotate-right"></i></span>
+                <span><i  class="fa-solid fa-repeat"></i></span>
+                <span><i  class="fa-solid fa-download"></i></span>
+                <span><i  class="fa-regular fa-heart"></i></span>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://kit.fontawesome.com/081a8069c2.js" crossorigin="anonymous"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
