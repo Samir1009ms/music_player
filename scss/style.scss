@@ -222,7 +222,7 @@ input[name="volume"]::-webkit-slider-thumb {
     .music{
       &-container {
         width: 100% !important;
-        height: 100% !important;
+        height: auto !important;
       }
     
     }
